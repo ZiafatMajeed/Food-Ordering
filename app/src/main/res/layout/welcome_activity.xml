@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".WelcomeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/logoimgwlcm"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/wlcom_pizza"
+        app:layout_constraintEnd_toStartOf="@+id/logotextwlcm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logotextwlcm"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/appcolor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoimgwlcm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoimgwlcm"
+        app:layout_constraintTop_toTopOf="@+id/logoimgwlcm"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/pizzawlcm"
+        android:layout_width="277dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/wlcom_pizza_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoimgwlcm" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350sp"
+        android:layout_height="68sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="&quot;Enjoy a delicious experience with Mitza Pizza. From high quality to free shipping and fast delivery.”"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizzawlcm" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="350dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="188dp"
+        android:text="A variety of pizzas, burgers and fast food with high quality and safe and fast delivery are waiting for you with the Pizza Mitza program. Shopping with a pleasant and fast user experience"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="350dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="124dp"
+        android:backgroundTint="@color/button_tint"
+        android:text="Create a user account"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="163dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Log in"
+            android:textColor="@color/appcolor"
+            app:cornerRadius="10dp"
+            app:iconTint="@color/appcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register"
+            app:strokeColor="@color/appcolor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
